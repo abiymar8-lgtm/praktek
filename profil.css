@@ -236,7 +236,14 @@ footer h6 {
   .tombol {
     margin: 30px;
   }
+  .akhir {
+  display: block;
 }
+.footer1 {
+  display: block;
+}
+}
+
 
 
 
