@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Biodata</title>
+        <script src="https://unpkg.com/feather-icons"></script>
         <link rel="stylesheet" href="profil.css">
     </head>
 
@@ -11,7 +12,7 @@
         <div class="penuh">
             <header>
                 <div class="icon">
-                    <h1 class="head"><span class="logo"><img src="profilbagus.png" alt="profil" width="50" height="50"></span>Profile</h1>
+                    <h1 class="head"><span class="logo"><img src="../kopi/profilbagus.png" alt="profil" width="50" height="50"></span>Profile</h1>
                 </div>
                 <div class="menu">
                     <nav class="navigation">
@@ -22,6 +23,7 @@
                 </div>
                 <div>
                     <button onclick="toggleMode()" id="modeBtn" class="button tombol">Mode Gelap</button>
+                    <a href="#" id="hamburger"><i data-feather="menu"></i></a>
                 </div>
             </header>
         </div>
@@ -34,7 +36,7 @@
                 <a class="button" href="#"> Explore Colection</a>
             </div>
             <div class="picture">
-                <img src="profilbagus.png" alt="profil" width="600px">
+                <img src="../kopi/profilbagus.png" alt="profil" width="600px">
             </div>
         </section>
         <div id="Product" class="school">
@@ -55,22 +57,22 @@
         <footer>
             <div class="akhir">
                 <div class="footer1">
-                    <img src="profilbagus.png" alt="logo" width="50" height="50">
+                    <img src="../kopi/gambar.png" alt="logo" width="50" height="50">
                     <h1>Profile</h1>
                 </div>
-                <div class="footer2">
+                <div class="footer2 footerpertama">
                     <h6>Education</h6>
                     <a href="https://www.instagram.com/sintesaplay/">SMA</a>
                     <a href="https://www.instagram.com/pesantren_ulilalbab.kra/">SMP</a>
                     <a href="https://www.instagram.com/sditinsanmulia_solo/">SD</a>
                 </div>
-                <div class="footer2">
+                <div class="footer2 footerkedua">
                     <h6>Menu</h6>
                     <a href="#Home">Home</a>
                     <a href="#Product">Education</a>
                     <a href="#About">About</a>
                 </div>
-                <div class="footer2">
+                <div class="footer2 footerketiga">
                     <h6>Connect</h6>
                     <a href="https://www.instagram.com/abiym_ar/">Instagram</a>
                     <a href="#">Facebook</a>
@@ -79,8 +81,9 @@
             </div>
             <h6>© 2025 Profile Co. All rights reserved.</h6>
         </footer>
+        <script>
+            feather.replace();
+        </script>
         <script src="profil.js"></script>
     </body> 
-
 </html>
-
