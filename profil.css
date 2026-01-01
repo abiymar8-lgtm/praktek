@@ -20,6 +20,11 @@ body {
   max-width: 100%;
   box-shadow: 0px 2px 10px;
 }
+#hamburger {
+  items-align: center;
+  color: #351bbaff;
+  display: none;
+}
 header {
   max-width: 1250px;
   height: 60px;
@@ -184,66 +189,92 @@ footer h6 {
   font-size: 20px;
   text-align: center;
 }
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
   }
-
   .isi {
     flex-direction: column;
     text-align: center;
+    items-align: center;
   }
 
   .text,
   .picture {
     max-width: 100%;
   }
-  .text {
-    margin: 20px;
-  }
 
   .picture img {
-    max-width: 100%;
-  }
-  .tombol {
-    margin: 20px;
-  }
-}
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  .penuh {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin-top: 30px;
   }
   .isi {
-    flex-direction: column;
-    text-align: center;
+    width: 80%;
+  }
+  #hamburger {
+    display: inline-block;
+  }
+  .navigation {
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    background: #fff;
+    width: 250px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
 
-  .text,
-  .picture {
-    max-width: 100%;
-  }
-  .text {
-    margin: 30px;
-  }
-
-  .picture img {
-    max-width: 100%;
-  }
-  .tombol {
-    margin: 30px;
+  .navigation.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   .akhir {
-  display: block;
+    display: flex;
+    font-size: 20px;
+  }
+  footer {
+    background-color: #111827;
+    width: 100%;
+    height: 500px;
+  }
+  .footerkedua {
+    margin-top: 150px;
+    margin-left: -220px;
+  }
+  .footerketiga {
+    margin-top: 300px;
+    margin-left: -180px;
+  }
+  .footer1 {
+    display: flex;
+    font-size: 20px;
+  }
+  .footer1 img {
+    margin-top: 10px;
+  }
+  .footer2 h6 {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 25px;
+  }
+  .footer2 a {
+    color: #74879d;
+    display: block;
+    margin-left: 100px;
+    margin-bottom: -50px;
+    text-decoration: none;
+  }
 }
-.footer1 {
-  display: block;
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }
-}
-
-
-
-
