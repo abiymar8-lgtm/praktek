@@ -17,3 +17,14 @@ if (localStorage.getItem('mode') === 'dark') {
   document.body.classList.add('dark')
   document.getElementById('modeBtn').innerText = 'Mode Terang'
 }
+const hamburger = document.querySelector('#hamburger')
+const nav = document.querySelector('.navigation')
+
+hamburger.onclick = () => {
+  nav.classList.toggle('active')
+}
+document.querySelectorAll('.navigation a').forEach(link => {
+  link.onclick = () => {
+    nav.classList.remove('active')
+  }
+})
